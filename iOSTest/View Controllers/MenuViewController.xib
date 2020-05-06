@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="iOSTest" customModuleProvider="target">
+            <connections>
+                <outlet property="animationButton" destination="9uL-ib-Ayk" id="ldi-Bd-aNe"/>
+                <outlet property="chatButton" destination="4Fa-5D-jYS" id="WQf-Sy-Tse"/>
+                <outlet property="loginButton" destination="6JX-Lv-AOm" id="IBa-KL-U4C"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fa-5D-jYS" userLabel="UIButton">
+                    <rect key="frame" x="30" y="227" width="315" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="Tdg-xt-Lq3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="38" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="CHAT" image="ic_chat">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressChatButton:" destination="-1" eventType="touchUpInside" id="vKS-9T-LMp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JX-Lv-AOm" userLabel="UIButton">
+                    <rect key="frame" x="30" y="306" width="315" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="NgG-3n-k7w"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="38" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="LOGIN" image="ic_login">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressLoginButton:" destination="-1" eventType="touchUpInside" id="vMe-dG-aNn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uL-ib-Ayk" userLabel="UIButton">
+                    <rect key="frame" x="30" y="385" width="315" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="raY-zr-sEp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <inset key="contentEdgeInsets" minX="22" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="38" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="ANIMATION" image="ic_animation">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didPressAnimationButton:" destination="-1" eventType="touchUpInside" id="J6O-uG-LwS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9uL-ib-Ayk" firstAttribute="top" secondItem="6JX-Lv-AOm" secondAttribute="bottom" constant="24" id="2OV-cS-tyQ"/>
+                <constraint firstAttribute="trailing" secondItem="9uL-ib-Ayk" secondAttribute="trailing" constant="30" id="6No-jU-Kbc"/>
+                <constraint firstAttribute="trailing" secondItem="4Fa-5D-jYS" secondAttribute="trailing" constant="30" id="6Qu-ao-sDV"/>
+                <constraint firstAttribute="trailing" secondItem="6JX-Lv-AOm" secondAttribute="trailing" constant="30" id="ARu-8T-Sl4"/>
+                <constraint firstItem="6JX-Lv-AOm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Q89-ea-SxL"/>
+                <constraint firstItem="4Fa-5D-jYS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="227" id="eHF-5Z-OZx"/>
+                <constraint firstItem="6JX-Lv-AOm" firstAttribute="top" secondItem="4Fa-5D-jYS" secondAttribute="bottom" constant="24" id="hkI-Wr-qdp"/>
+                <constraint firstItem="9uL-ib-Ayk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="mPt-bY-LED"/>
+                <constraint firstItem="4Fa-5D-jYS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="omc-Hk-grL"/>
+            </constraints>
+            <point key="canvasLocation" x="609.60000000000002" y="420.98950524737637"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_animation" width="23" height="24"/>
+        <image name="ic_chat" width="24" height="24"/>
+        <image name="ic_login" width="24" height="24"/>
+    </resources>
+</document>
